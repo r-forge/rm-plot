@@ -1,0 +1,19 @@
+					***************************
+					** rm.plot VERSION 0.8.0 **
+					***************************
+					
+					Changes in MPTinR Version 0.8.0
+					Released December 2011
+
+	Significant User Visible Changes
+	
+	o	changed the default arguments for col.offset, col.x, col.d (+1 each).
+	
+	o	changed the default for the mar argument.
+	
+	New Features / Bugfixes
+	
+	o	plot argument: rm.plot no allows to supress the plotting of the graph
+		by setting plot to FALSE. Can be used to only plot the legend 
+		(perfect in combination with layout()).
+
