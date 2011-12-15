@@ -1,6 +1,6 @@
 
 rm.plot <- function(d, col.offset = 2, col.x = 3,  col.d = 4, noise = 0.008, na.rm = FALSE,
-				pch = 21:25, lty = 1:5, bg.b.col = "darkgrey", bg.f.col = NULL, fg.b.col = "black", fg.f.col="black", type = "o",
+				pch = 21:25, lty = 1:5, bg.b.col = "darkgrey", bg.f.col = NULL, fg.b.col = "black", fg.f.col="black", type = "o", pt.cex = 1, 
 				xlab = "", ylab = "", ylim, max.offset = 0.2, xaxis = TRUE, x.labels, xaxt ="n", plot = TRUE,
 				legend = TRUE, mar = NULL, reset.mar = TRUE, l.pos, yjust = 0.5, l.bty = "n", l.adj = c(0, 0.5),  ...) {
 
@@ -111,7 +111,7 @@ rm.plot <- function(d, col.offset = 2, col.x = 3,  col.d = 4, noise = 0.008, na.
 			dp <- create.dp(d.lst, n.x, noise)
 			x <- dp[[1]] - ((offset.start)-((c-1)*offset.dist))
 			y <- dp[[2]]
-			points(x,y, pch = pch[c], col = bg.b.col, bg = bg.f.col)
+			points(x,y, pch = pch[c], col = bg.b.col, bg = bg.f.col, cex = pt.cex)
 		}
 		#lines
 		for (c in 1:n.offset) {
@@ -119,7 +119,7 @@ rm.plot <- function(d, col.offset = 2, col.x = 3,  col.d = 4, noise = 0.008, na.
 			d.lst <- split(d.c[,col.d], d.c[,col.x])
 			x <- 1:n.x - ((offset.start)-((c-1)*offset.dist))
 			y <- sapply(d.lst, mean, na.rm = na.rm)
-			lines(x, y, pch = pch[c], type = type, lty = lty[c], col = fg.b.col, bg = fg.f.col )
+			lines(x, y, pch = pch[c], type = type, lty = lty[c], col = fg.b.col, bg = fg.f.col, cex = pt.cex)
 		}
 		if (xaxis == TRUE) axis(side = 1, at = 1:n.x, labels = x.labels)
 	}

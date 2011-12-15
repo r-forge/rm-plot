@@ -1,4 +1,24 @@
 					***************************
+					** rm.plot VERSION 0.8.1 **
+					***************************
+					
+					Changes in MPTinR Version 0.8.1
+					Released December 2011
+
+	Significant User Visible Changes
+	
+	o	added pt.cex argument. WIth this the size of the points can be 
+		influenced.
+	
+	o	added the possibility to specify the position of the legend when 
+		plot = FALSE via l.pos.
+	
+	New Features / Bugfixes
+	
+	o	see changes.
+
+
+					***************************
 					** rm.plot VERSION 0.8.0 **
 					***************************
 					
