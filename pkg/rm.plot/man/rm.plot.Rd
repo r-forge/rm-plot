@@ -7,7 +7,14 @@ rm.plot: Raw-Means Plots for Experimental Designs
 rm.plot (for raw-means-plot) is a function for visualizing results of experimental designs with up to two factors. It plots both raw data (background) and factor means (foreground) to provide a more accurate visualization of the underlying distribution.
 }
 \usage{
-rm.plot(d, col.offset = 2, col.x = 3, col.d = 4, noise = 0.008, na.rm = FALSE, pch = 21:25, lty = 1:5, bg.b.col = "darkgrey", bg.f.col = NULL, fg.b.col = "black", fg.f.col = "black", type = "o", xlab = "", ylab = "", ylim, max.offset = 0.2, xaxis = TRUE, x.labels, xaxt = "n", plot = TRUE, legend = TRUE, mar = NULL, reset.mar = TRUE, l.pos, yjust = 0.5, l.bty = "n", l.adj = c(0, 0.5), ...)
+rm.plot(d, col.offset = 2, col.x = 3, col.d = 4, noise = 0.008, na.rm = FALSE, 
+	pch = 21:25, lty = 1:5, 
+	bg.b.col = "darkgrey", bg.f.col = NULL, fg.b.col = "black", fg.f.col = "black", 
+	type = "o", xlab = "", ylab = "", 
+	ylim, max.offset = 0.2, xaxis = TRUE, x.labels, xaxt = "n", 
+	plot = TRUE, legend = TRUE, 
+	mar = NULL, reset.mar = TRUE, l.pos, yjust = 0.5, l.bty = "n", l.adj = c(0, 0.5), 
+	...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

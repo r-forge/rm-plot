@@ -1,4 +1,9 @@
 
+2011-12-15
+	
+		* Added Newlines in the argument list in rm.plot.rd 
+		  (looks better now)
+
 2011-12-05
 
 		* Created Package for rm.plot (is Version 0.8.0)
