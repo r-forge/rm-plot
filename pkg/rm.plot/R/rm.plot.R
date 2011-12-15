@@ -125,7 +125,7 @@ rm.plot <- function(d, col.offset = 2, col.x = 3,  col.d = 4, noise = 0.008, na.
 	}
 	if (!plot) {
 		plot(0,0, type = "n", xlim = c(0, 10), ylim = c(0,10), axes = FALSE, ylab = "", xlab = "" , mar = c(0,0,0,0))
-		l.pos = c(5,5)
+		if (missing(l.pos)) l.pos = c(5,5)
 	}
 	if (legend == TRUE) {
 		if (n.x == 1) {

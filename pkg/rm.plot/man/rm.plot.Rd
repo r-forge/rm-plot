@@ -79,7 +79,7 @@ the y-axis limits of the plot. If not specified (the default) will be taken from
 A character which specifies whether ot not the x-axis should be plotted by the call to plot function. Interfers with the aforementioned \code{xaxis} argument and the automatic \code{xaxis} function by \code{rm.plot}. Just there for completeness. Default \code{"n"} (and should not be changed).
 }
   \item{plot}{
-\code{logical}. Should the \code{rm.plot} be drawn or not. If \code{TRUE} (the default) plot will be drawn. If \code{FALSE} only the legend will be drawn (if \code{legend = TRUE}).
+\code{logical}. Should the \code{rm.plot} be drawn or not. If \code{TRUE} (the default) plot will be drawn. If \code{FALSE} only the legend will be drawn (if \code{legend = TRUE}) See details.
 }
   \item{legend}{
 \code{logical} indicating whether or not \code{rm.plot} should automatically add a legend on the right outside the plot area indicating which line and points refer to which \code{col.offset} factor levels. Default is \code{TRUE}.
@@ -91,7 +91,7 @@ A character which specifies whether ot not the x-axis should be plotted by the c
 \code{logical} indicating if the margins (\code{mar}) shall be resetted after setting internally. Will be ignored if \code{legend = FALSE}. Default is \code{TRUE} and should not be changed (especially with \code{plot = FLASE}).
 }
   \item{l.pos}{
-\code{numeric} vector of length 2 indicating the position of the legend. If not specified automatically determined. Ignored if \code{legend=FALSE}.
+\code{numeric} vector of length 2 indicating the position of the legend. If not specified automatically determined. See details.
 }
   \item{yjust}{
 how the legend is to be justified relative to the legend y location. A value of 0 means top, 0.5 means centered and 1 means bottom justified. Default is 0.5.
@@ -109,6 +109,8 @@ further arguments which are either passed to plot or legend. The following argum
 }
 \details{
 \code{rm.plot} is basically an advanced wrapper for two other functions: \code{\link{plot}} and (if \code{legend=TRUE}) \code{\link{legend}}. Furthermore, raw data is plotted with a call to \code{\link{points}} and the means with a call to \code{\link{lines}}.
+
+You can use \code{rm.plot} to plot only a legend by setting \code{plot = FALSE} and \code{legend = TRUE}. Then, \code{rm.plot} will draw an invisible plot with \code{xlim = c(0,10)} and \code{ylim = c(0, 10)} and place the legend on this invisible plot. You can specify \code{l.pos} to position the legend, otherwise it will be plotted at \code{c(5,5)} (i.e., in the middle of the plot). Note that \code{xpd = TRUE} in the call to \code{legend} (see \code{link{par}}).
 }
 \value{
 Nothing

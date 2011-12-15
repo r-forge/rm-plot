@@ -1,6 +1,8 @@
 
 2011-12-15
-	
+		
+		* Added the possibilitie to specify l.pos if plot = FALSE.
+		
 		* Added Newlines in the argument list in rm.plot.rd 
 		  (looks better now)
 
