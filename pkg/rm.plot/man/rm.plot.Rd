@@ -30,7 +30,7 @@ a \code{numeric} or \code{character} scalar, specifiying either number or name o
 a \code{numeric} or \code{character} scalar, specifiying either number or name of the data column. Default is 4.
 }
   \item{noise}{
-either a \code{numeric} scalar or \code{NULL}. If \code{NULL}, raw data points with same value will be indistinguishable.  Otherwise, uniform noise will be added to each raw data point with same value after the first one with this value. The noise (i.e., jitter) is drawn from the intervall ranging from \code{-noise} to \code{noise} (times the maximal \code{ylim} distance). Default  is .005, that is 0.5% of \code{ylim}.
+either a \code{numeric} scalar or \code{NULL}. If \code{NULL}, raw data points with same value will be indistinguishable.  Otherwise, uniform noise will be added to each raw data point with same value after the first one with this value. The noise (i.e., jitter) is drawn from the intervall ranging from \code{-noise} to \code{noise} (times the maximal \code{ylim} distance). Default  is .005, that is 0.5\% of \code{ylim}.
 }
   \item{na.rm}{
 \code{logical} indicating whether \code{NA} values should be stripped before the computation proceeds. Default is \code{FALSE}. Throws an error message if FALSE and NAs are encountered.
