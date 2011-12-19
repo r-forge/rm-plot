@@ -1,4 +1,7 @@
 
+2011-12-19
+		* Corrected Minor Error in rm.plot.Rd
+
 2011-12-15
 		
 		* Added pt.cex argument
