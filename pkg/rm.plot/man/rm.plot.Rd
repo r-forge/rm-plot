@@ -18,7 +18,7 @@ rm.plot(d, col.offset = 2, col.x = 3, col.d = 4, noise = 0.008, na.rm = FALSE,
 }
 \arguments{
   \item{d}{
-	a \code{data.frame} in long format (see \code{\link{reshape}} or the \pkg{reshape} package, I recommend the latter) that contains at least three columns: one column coding the first factor (\code{col.offset}), one column coding the second factor (\code{col.x}), and one column containing the data (\code{col.d}). The only mandatory argument.
+	a \code{data.frame} in long format (see \code{\link{reshape}} or the reshape package, I recommend the latter) that contains at least three columns: one column coding the first factor (\code{col.offset}), one column coding the second factor (\code{col.x}), and one column containing the data (\code{col.d}). The only mandatory argument.
 }
   \item{col.offset}{
 a \code{numeric} or \code{character} scalar, specifiying either number or name of the column coding the different lines (the offset or first factor). Default is 2.
@@ -123,7 +123,9 @@ see \url{http://www.psychologie.uni-freiburg.de/Members/singmann/R/rm.plot}
 \author{
 Henrik Singmann
 }
-
+\seealso{
+\code{\link{rm.plot2}} for a wrapper around rm.plot that will aggregate the data prior to plotting if there is more than one observation per cell.
+}
 
 
 \examples{

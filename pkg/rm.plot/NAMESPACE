@@ -1,5 +1,7 @@
 export(
-       "rm.plot"
+       "rm.plot",
+	   "rm.plot2"
 )
 
 importFrom("graphics", plot, legend, points, lines)
+importFrom("stats", aggregate)
