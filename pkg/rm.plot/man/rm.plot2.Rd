@@ -48,13 +48,14 @@ Henrik Singmann
 }
 \examples{
 \dontrun{
-#The examples uses the OBrienKaiser dataset and needs reshape.
+#The examples uses the OBrienKaiser dataset from car and needs reshape.
 require(reshape)
+require(car)
 data(OBrienKaiser)
 OBKnew <- cbind(factor(1:nrow(OBrienKaiser)), OBrienKaiser)
 colnames(OBKnew)[1] <- "id"
 OBK.long <- melt(OBKnew)
-OBK.long[, c("measurement", "time")] <- t(vapply(strsplit(as.character(OBK.long$variable), "\\."),  "[", c("", "")))
+OBK.long[, c("measurement", "time")] <- t(vapply(strsplit(as.character(OBK.long$variable), "\\\."),  "[", c("", "")))
 
 rm.plot2(OBK.long, "id", "measurement", "gender", "value")
 
