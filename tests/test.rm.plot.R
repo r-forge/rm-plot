@@ -46,11 +46,12 @@ rm.plot(z, main = "standard jitter")
 
 rm.plot(z, noise = .01, main = "bigger jitter")
 
+require(car)
+require(reshape)
 data(OBrienKaiser)
 
 OBKnew <- cbind(factor(1:nrow(OBrienKaiser)), OBrienKaiser)
 colnames(OBKnew)[1] <- "id"
-
 OBK.long <- melt(OBKnew)
 OBK.long[, c("measurement", "time")] <- t(vapply(strsplit(as.character(OBK.long$variable), "\\."),  "[", c("", "")))
 
@@ -59,6 +60,7 @@ aggregate(value ~ id + treatment + gender, data = OBK.long, mean)
 aggregate(value ~ id + measurement + gender, data = OBK.long, mean)
 
 rm.plot2(OBK.long, col.id = "id", "measurement", "gender", "value")
+add.ps(OBK.long, col.id = "id", "measurement", "gender", "value")
 
 rm.plot2(OBK.long, col.id = "id", "treatment", "gender", "value")
 

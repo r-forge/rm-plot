@@ -2,13 +2,16 @@
 					** rm.plot VERSION 0.9.0 **
 					***************************
 					
-					Changes in MPTinR Version 0.9.0
+					Changes in MPTinR Version 0.9.x
 					Released February 2012
 
 	Significant User Visible Changes
 	
 	o	added rm.plot2, a wrapper for rm.plot when there are more than 
 		one observation per dataset and cell.
+	
+	o	added add.ps, a function that adds p-values from t-test to the plot 
+		to compare the values at each x-axis position.
 	
 	New Features / Bugfixes
 	

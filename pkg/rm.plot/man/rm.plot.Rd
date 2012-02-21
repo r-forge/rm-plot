@@ -125,6 +125,8 @@ Henrik Singmann
 }
 \seealso{
 \code{\link{rm.plot2}} for a wrapper around rm.plot that will aggregate the data prior to plotting if there is more than one observation per cell.
+
+\code{\link{add.ps}} can be used to compare the values at each x-axis position, by adding p-values from t-tests to the x-axis.
 }
 
 

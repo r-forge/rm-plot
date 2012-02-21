@@ -44,7 +44,9 @@ Henrik Singmann
 }
 
 \seealso{
-\code{\link{rm.plot}}
+\code{\link{add.ps}} can be used to compare the values at each x-axis position.
+
+\code{\link{rm.plot}} has all the arguments.
 }
 \examples{
 \dontrun{

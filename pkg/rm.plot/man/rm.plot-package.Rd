@@ -11,11 +11,13 @@ rm.plot (acronym for raw-means plot) is a function for visualizing results of ex
 \tabular{ll}{
 Package: \tab rm.plot\cr
 Type: \tab Package\cr
-Version: \tab 0.9.0\cr
-Date: \tab 2012-02-20\cr
+Version: \tab 0.9.1\cr
+Date: \tab 2012-02-21\cr
 License: \tab GPL (>= 2)\cr
 }
 see \code{\link{rm.plot}} for the function, and \code{\link{rm.plot2}} for the wrapper when the data has more than two factors.
+
+\code{\link{add.ps}} can be used to compare the values at each x-axis position by adding p-values of t-tests to the plots.
 
 see \url{http://www.psychologie.uni-freiburg.de/Members/singmann/R/rm.plot} for theoretical background
 }
@@ -24,7 +26,5 @@ Henrik Singmann <henrik.singmann@psychologie.uni-freiburg.de>
 }
 
 \keyword{ package }
-\seealso{
 
-}
 

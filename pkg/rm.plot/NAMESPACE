@@ -1,7 +1,8 @@
 export(
        "rm.plot",
-	   "rm.plot2"
+	   "rm.plot2",
+	   "add.ps"
 )
 
-importFrom("graphics", plot, legend, points, lines)
-importFrom("stats", aggregate)
+importFrom("graphics", plot, legend, points, lines, axis)
+importFrom("stats", aggregate, t.test)
