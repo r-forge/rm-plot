@@ -10,7 +10,7 @@ rm.plot (for raw-means-plot) is a function for visualizing results of experiment
 rm.plot(d, col.offset = 2, col.x = 3, col.d = 4, noise = 0.008, na.rm = FALSE, 
 	pch = 21:25, lty = 1:5, 
 	bg.b.col = "darkgrey", bg.f.col = NULL, fg.b.col = "black", fg.f.col = "black", 
-	type = "o", pt.cex = 1, xlab = "", ylab = "", 
+	type = "o", pt.cex = 1, lwd = 1, xlab = "", ylab = "", 
 	ylim, max.offset = 0.2, xaxis = TRUE, x.labels, xaxt = "n", 
 	plot = TRUE, legend = TRUE, 
 	mar = NULL, reset.mar = TRUE, l.pos, yjust = 0.5, l.bty = "n", l.adj = c(0, 0.5), 
@@ -57,7 +57,10 @@ foreground fill color: fill color for mean data points. Default: \code{black}
 same as type in \code{\link{plot}}. Default: \code{o} ("overplotted")
 }
   \item{pt.cex}{
-\code{numeric} specifying the \code{cex} value used for plotting points and lines. Default is 1.
+\code{numeric} specifying the \code{cex} value used for plotting the points. Default is 1.
+}
+  \item{lwd}{
+\code{numeric} specifying the \code{lwd} value used for plotting the lines. Default is 1.
 }
   \item{xlab}{
 x-axis label. Default: \code{""}

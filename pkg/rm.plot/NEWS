@@ -1,5 +1,5 @@
 					***************************
-					** rm.plot VERSION 0.9.0 **
+					** rm.plot VERSION 0.9.x **
 					***************************
 					
 					Changes in MPTinR Version 0.9.x
@@ -15,7 +15,7 @@
 	
 	New Features / Bugfixes
 	
-	o	
+	o	added lwd paramater to change line width in rm.plot.
 
 
 					***************************
