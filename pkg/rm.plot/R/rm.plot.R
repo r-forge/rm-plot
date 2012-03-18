@@ -23,7 +23,7 @@ rm.plot <- function(d, col.offset = 2, col.x = 3,  col.d = 4, noise = 0.008, na.
 	}
 
 	largs <- c("fill", "border", "angle", "density", "box.lwd", "box.lty", "box.col", 
-		"pt.cex", "pt.lwd", "xjust", "x.intersp", "y.intersp", "text.width", "text.col",
+		 "pt.lwd", "xjust", "x.intersp", "y.intersp", "text.width", "text.col",
 		"merge", "trace", "plot", "ncol", "horiz", "title", "inset", "title.col", "title.adj")
 	
 	dots <- list(...)
@@ -141,7 +141,7 @@ rm.plot <- function(d, col.offset = 2, col.x = 3,  col.d = 4, noise = 0.008, na.
 			l.pos[2] <- (ylim[2]-((ylim[2]-ylim[1])/2))
 		})
 		do.call('legend', c(list(x = l.pos[1],y = l.pos[2], levels(d[,col.offset]), pch = pch, lty = lty, 
-		col = fg.b.col, pt.bg = fg.f.col, yjust = yjust, bty = l.bty, adj = l.adj, xpd = TRUE), args.to.l))
+		col = fg.b.col, pt.bg = fg.f.col, yjust = yjust, bty = l.bty, adj = l.adj, xpd = TRUE, pt.cex = pt.cex, lwd = lwd), args.to.l))
 	}
 	if (legend == TRUE & reset.mar == TRUE) {
 		par(mar = res.mar)
