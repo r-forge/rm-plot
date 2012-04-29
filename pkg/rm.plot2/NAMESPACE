@@ -1,0 +1,8 @@
+export(
+       "raw.means.plot",
+	   "raw.means.plot2",
+	   "add.ps"
+)
+
+importFrom("graphics", plot, legend, points, lines, axis)
+importFrom("stats", aggregate, t.test)

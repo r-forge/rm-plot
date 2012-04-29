@@ -1,0 +1,25 @@
+2012-03-18
+		* added lwd paramater to rm.plot
+
+2012-02-21
+		* added add.ps and RD files. advanced to 0.9.1
+
+2012-02-20
+		* added rm.plot2 and .RD file. advanced to 0.9.0
+
+2011-12-19
+		* Corrected Minor Error in rm.plot.Rd
+
+2011-12-15
+		
+		* Added pt.cex argument
+		
+		* Added the possibilitie to specify l.pos if plot = FALSE.
+		
+		* Added Newlines in the argument list in rm.plot.rd 
+		  (looks better now)
+
+2011-12-05
+
+		* Created Package for rm.plot (is Version 0.8.0)
+		

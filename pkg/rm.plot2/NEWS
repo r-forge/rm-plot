@@ -1,0 +1,59 @@
+					***************************
+					** rm.plot VERSION 0.9.x **
+					***************************
+					
+					Changes in MPTinR Version 0.9.x
+					Released February 2012
+
+	Significant User Visible Changes
+	
+	o	added rm.plot2, a wrapper for rm.plot when there are more than 
+		one observation per dataset and cell.
+	
+	o	added add.ps, a function that adds p-values from t-test to the plot 
+		to compare the values at each x-axis position.
+	
+	New Features / Bugfixes
+	
+	o	added lwd paramater to change line width in rm.plot.
+
+
+					***************************
+					** rm.plot VERSION 0.8.1 **
+					***************************
+					
+					Changes in MPTinR Version 0.8.1
+					Released December 2011
+
+	Significant User Visible Changes
+	
+	o	added pt.cex argument. WIth this the size of the points can be 
+		influenced.
+	
+	o	added the possibility to specify the position of the legend when 
+		plot = FALSE via l.pos.
+	
+	New Features / Bugfixes
+	
+	o	see changes.
+
+
+					***************************
+					** rm.plot VERSION 0.8.0 **
+					***************************
+					
+					Changes in MPTinR Version 0.8.0
+					Released December 2011
+
+	Significant User Visible Changes
+	
+	o	changed the default arguments for col.offset, col.x, col.d (+1 each).
+	
+	o	changed the default for the mar argument.
+	
+	New Features / Bugfixes
+	
+	o	plot argument: rm.plot no allows to supress the plotting of the graph
+		by setting plot to FALSE. Can be used to only plot the legend 
+		(perfect in combination with layout()).
+
