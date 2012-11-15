@@ -1,3 +1,22 @@
+					****************************
+					** rm.plot VERSION 0.10.x **
+					****************************
+					
+					Changes in MPTinR Version 0.10.x
+					Released November 2012
+
+	Significant User Visible Changes
+	
+	o	
+	
+	New Features / Bugfixes
+	
+	o	added test argument to add.ps which now supports:
+        t-test, Welch test, perumtation test, median,
+        Wilcoxon test (the latter three via afex).
+
+
+
 					***************************
 					** rm.plot VERSION 0.9.x **
 					***************************

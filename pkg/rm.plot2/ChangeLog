@@ -1,3 +1,6 @@
+2012-11-15
+		* added test argument to add.ps (implementing e.g., permutation test)
+        
 2012-03-18
 		* added lwd paramater to rm.plot
 

@@ -8,8 +8,9 @@ Adds p-values comparing the different cells at each x-axis position with a refer
 }
 \usage{
 add.ps(data, col.id, col.offset, col.x, col.value, fun.aggregate = "mean", 
-ref.offset = 1, prefixes, 
-alternative = c("two.sided", "less", "greater"), mu = 0, paired = FALSE, var.equal = FALSE, 
+ref.offset = 1, prefixes, test = "t",
+alternative = c("two.sided", "less", "greater"), distribution = approximate(100000),
+mu = 0, paired = FALSE, var.equal = FALSE, 
 lty = 0, ...)
 }
 \arguments{
@@ -37,8 +38,14 @@ Scalar \code{numeric} indicating the reference level to be tested against. The d
   \item{prefixes}{
 \code{character} vector of the indices for the p-values. If missing corresponds to \code{levels(factor(d.new[,col.offset]))[-ref.offset]}. 
 }
+  \item{test}{
+character of length 1, which test to use. currently implemented are \code{c("t", "stats.wilcoxon", "Wilcoxon", "permutation", "median")}. \code{c("Wilcoxon", "permutation", "median")} are called via \code{afex::compare.2.vectors}.
+}
   \item{alternative}{
 same as in \code{\link{t.test}}
+}
+  \item{distribution}{
+\code{distribution} argument to \pkg{coin}, see \code{\link[coin]{Distribution}} or , \code{\link[coin]{IndependenceTest}}. Defaults to \code{approximate(100000)} indicating an approximation of the excat conditional distribution with 100.000 Monte Carlo samples. One can use \code{"exact"} for small samples and if \code{paired = FALSE}.
 }
   \item{mu}{
 same as in \code{\link{t.test}}
